@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Election Results</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="#">Portal Votaciones</a>
+		</div>
+		<ul class="nav navbar-nav">
+		  <li class="active"><a href="#">Inicio</a></li>
+		  <li><a href="#resultados">Resultados</a></li>
+		  <li><a href="#candidatos">Candidatos</a></li>
+		  <li><a href="#votar">Votar</a></li>
+		</ul>
+	  </div>
+	</nav>
+	<div class="container">
+	  <div class="jumbotron" style="background-color:LightGray !important">
+		<h1 class="text-center">Elecciones Presidenciales de la Gran América Latina</h1>
+		<p id="accountAddress" class="text-center"></p>
+	  </div>
+	</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="loader">
+            <p class="text-center">Cargando...</p>
+          </div>
+          <div id="content" style="display: none;">
+            <table id ="resultados" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Votos</th>
+                </tr>
+              </thead>
+              <tbody id="candidatesResults">
+              </tbody>
+            </table>
+            <hr/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+	  <h2 id="candidatos">Fotos de los Candidatos</h2>
+	  <div class="row">
+		<div class="col-md-4 col-xs-6">
+		  <div class="thumbnail">
+			<img src="/images/fb.png" alt="FB" style="width:100%">
+			<div class="caption">
+			  <p>Fulgencio Batista</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 col-xs-6">
+		  <div class="thumbnail">
+			<img src="/images/as.jpg" alt="AS" style="width:100%">
+			<div class="caption">
+			  <p>Alfredo Strossner</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 col-xs-6">
+		  <div class="thumbnail">
+			<img src="/images/ap.jpg" alt="AP" style="width:100%">
+			<div class="caption">
+			  <p>Augusto Pinochet</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 col-xs-6">
+		  <div class="thumbnail">
+			<img src="/images/grp.jpg" alt="GRP" style="width:100%">
+			<div class="caption">
+			  <p>Gustavo Rojas Pinilla</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 col-xs-6">
+		  <div class="thumbnail">
+			<img src="/images/jrv.jpg" alt="JRV" style="width:100%">
+			<div class="caption">
+			  <p>Jorge Rafael Videla</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 col-xs-6">
+		  <div class="thumbnail">
+			<img src="/images/man.jpg" alt="MAN" style="width:100%">
+			<div class="caption">
+			  <p>Manuel Antonio Noriega</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <hr/>
+	  <div id="votar" class="container">
+		<form onSubmit="App.castVote(); return false;">
+          <div class="form-group">
+            <label for="candidatesSelect">Seleccione su candidato</label>
+            <select class="form-control" id="candidatesSelect">
+            </select>
+          </div>
+          <img src="/images/ayuda.png" alt="AYUDA" class="centroIma">
+          <br/>
+          <button type="submit" class="btn btn-primary btn-block">VOTAR</button>
+          <br/>
+        </form>
+	  </div>
+    </div>
+    <div class="piePagina">
+		<p style="margin-top: 2px; margin-bottom: 2px;">Redes de Comunicaciones 3 - Universidad Distrital FJDC</p>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
