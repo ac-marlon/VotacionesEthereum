@@ -22,12 +22,8 @@ contract Election {
     );
 
     constructor () public {
-        addCandidate("Fulgencio Batista");
-        addCandidate("Alfredo Strossner");
-        addCandidate("Augusto Pinochet");
-        addCandidate("Gustavo Rojas Pinilla");
-        addCandidate("Jorge Rafael Videla");
-        addCandidate("Manuel Antonio Noriega");
+        addCandidate("Candidate 1");
+        addCandidate("Candidate 2");
     }
 
     function addCandidate (string _name) private {
