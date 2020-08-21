@@ -1,46 +1,35 @@
 
-# Election - DAPP Tutorial
-Build your first decentralized application, or Dapp, on the Ethereum Network with this tutorial!
+# Election - DAPP
+Decentralized application, or Dapp, on the Ethereum Network
 
-**Full Free Video Tutorial:**
-https://youtu.be/3681ZYbDSSk
+Siga los pasos a continuación para descargar, instalar y ejecutar este proyecto.
 
-
-Follow the steps below to download, install, and run this project.
-
-## Dependencies
-Install these prerequisites to follow along with the tutorial. See free video tutorial or a full explanation of each prerequisite.
+## Dependencias
+Instalar los siguientes programas:
 - NPM: https://nodejs.org
 - Truffle: https://github.com/trufflesuite/truffle
 - Ganache: http://truffleframework.com/ganache/
 - Metamask: https://metamask.io/
 
-
-## Step 1. Clone the project
-`git clone https://github.com/dappuniversity/election`
-
-## Step 2. Install dependencies
+## Abrir una terminal en la carpeta raíz del proyecto
 ```
-$ cd election
+$ cd election-project
 $ npm install
 ```
-## Step 3. Start Ganache
-Open the Ganache GUI client that you downloaded and installed. This will start your local blockchain instance. See free video tutorial for full explanation.
+## Ejecutar Ganache
+Abrir el cliente GUI de Ganache descargado previamente. Esto iniciará una blockchain local.
 
-
-## Step 4. Compile & Deploy Election Smart Contract
+## Compilar e implementar el "Smart Contract"
 `$ truffle migrate --reset`
-You must migrate the election smart contract each time your restart ganache.
+Debe migrar el "smart contract" de elección cada vez que reinicie Ganache.
 
-## Step 5. Configure Metamask
-See free video tutorial for full explanation of these steps:
-- Unlock Metamask
-- Connect metamask to your local Etherum blockchain provided by Ganache.
-- Import an account provided by ganache.
+## Configurar Metamask
+- Desbloquear Metamask
+- Conectar Metamask a la blockchain local creada con Ganache.
+- Importar una de las cuentas proporcionadas por Ganache.
 
-## Step 6. Run the Front End Application
+## Ejecutar la interfaz gráfica de la aplicación
 `$ npm run dev`
-Visit this URL in your browser: http://localhost:3000
+Si no se abre automaticament eel navegador, ir a: http://localhost:3000
 
-If you get stuck, please reference the free video tutorial.
-
+## NOTA: Si no aparece la lista de los candidatos, es probable que deba conectar manualmente la cuenta de Metamask (desde el panel de configuración) al sitio
